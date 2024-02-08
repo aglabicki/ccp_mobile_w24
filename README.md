@@ -1,2 +1,2 @@
-# ccp_mobile_w24
-Ashley Glabicki Common Class Project - Mobile 
+# ccp_starter_code
+Starter Code for your CCP 

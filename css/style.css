@@ -1,0 +1,163 @@
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9; /* Light Gray Background */
+  color: #333; /* Dark Gray Text */
+}
+
+header {
+  background: lightpink; /* Pink Header Background */
+  color: white;
+  padding: 30px;
+  font-size: larger;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #fff; /* White Border at the bottom */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #ecf0f1; /* Light Gray Navigation Background */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Dark Gray Text */
+  margin: 0 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: pink; /* Pink Hover Color */
+}
+
+nav .active {
+  font-weight: bolder;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 20px;
+  background: #fff; /* White Main Background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light Shadow */
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 10px;
+  color: pink; /* Pink Header Color */
+}
+
+main h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #333; /* Dark Gray Text */
+}
+
+main h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #333; /* Dark Gray Text */
+}
+
+main img, main video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly Darker Shadow */
+  transition: transform 0.3s ease-in-out;
+  margin: 20px 0;
+}
+
+main img:hover, main video:hover {
+  transform: scale(1.1);
+}
+
+main p {
+  color: #555; /* Slightly Darker Gray Text */
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.bacons-photos, .sage-photos, .pluto-photos, .lulu-photos, .peddie-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  background: #ffedcc; /* Light Orange Section Background */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.bacons-photos img, .sage-photos img, .pluto-photos img, .lulu-photos img, .peddie-photos img {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bacons-photos img:hover, .sage-photos img:hover, .pluto-photos img:hover, .lulu-photos img:hover, .peddie-photos img:hover {
+  transform: scale(1.1);
+}
+
+#main ul {
+  margin-bottom: 30px;
+}
+
+#main li {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555; /* Slightly Darker Gray Text */
+}
+
+#main h3 {
+  color: #333; /* Dark Gray Text */
+  margin-top: 30px;
+}
+
+#main h2,
+#main h3 {
+  border-bottom: 2px solid #ff66b2; /* Pink Border Bottom */
+  padding-bottom: 10px;
+}
+
+#main h2:first-child,
+#main h3:first-child {
+  border: none;
+  padding: 0;
+}
+
+#main h2:last-child,
+#main h3:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+#main h2.travel {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+#main h3.travel {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+
