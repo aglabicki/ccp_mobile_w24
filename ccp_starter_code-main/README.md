@@ -1,2 +1,2 @@
-# ccp_mobile view
-Common Class Project Mobile View
+# ccp_starter_code
+Starter Code for your CCP 
