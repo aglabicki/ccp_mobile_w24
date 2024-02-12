@@ -1,11 +1,5 @@
-body, h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Arial';
   background-color: #f9f9f9; 
   color: #333; 
   line-height: 1.6; 
@@ -43,17 +37,11 @@ nav a {
   text-decoration: none;
   color: #333;
   margin: 0 20px;
-  transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-  color: pink; 
-  font-weight: bolder;
 }
 
 .active {
   font-weight: bolder;
-  text-decoration: underline; /* Underline active page link */
+  text-decoration: underline; 
 }
 
 main {
@@ -91,39 +79,9 @@ main h3 {
   color: pink; 
 }
 
-main img, main video {
-  display: block; /* Ensure images behave like block elements */
-  margin: 0 auto; /* Center images horizontally */
-  max-width: 100%; /* Ensure images don't exceed their container's width */
-  height: auto;
-  border-radius: 10px;
-  border: 15px;
-  border: 7px solid pink;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
-  transition: transform 0.3s ease-in-out;
-}
-
-.grid-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Three columns with equal width */
-  grid-column-gap: 20px; /* Gap between grid items */
-  list-style: none;
-  background-color: #f2f2f2; /* Background color for grid items */
-  padding: 20px; /* Add padding around the grid */
-  font-size: 20px;
-}
-
-.grid-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 90%;
-  grid-column-gap: 10px;
-  border-radius: 10px; /* Add border-radius for a softer look */
-  text-align: center; /* Center text within grid items */
-  margin: 20px; /* Add margin to create space between items */
-} */
-
-main img:hover, main video:hover {
-  transform: scale(1.1);
+#main h3 {
+  color: #333; 
+  margin-top: 30px;
 }
 
 main p {
@@ -135,26 +93,6 @@ main p {
   margin-top: 10px;
 } 
 
-.bacons-photos, .sage-photos, .pluto-photos, .lulu-photos, .peddie-photos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.bacons-photos img, .sage-photos img, .pluto-photos img, .lulu-photos img, .peddie-photos img {
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.bacons-photos img:hover, .sage-photos img:hover, .pluto-photos img:hover, .lulu-photos img:hover, .peddie-photos img:hover {
-  transform: scale(1.1);
-}
-
 #main ul {
   margin-bottom: 30px;
 }
@@ -164,12 +102,7 @@ main p {
   font-size: 15px;
   margin-left: 20px;
   margin-top:10px;
-  color: #555; 
-}
-
-#main h3 {
-  color: #333; 
-  margin-top: 30px;
+  color: black; 
 }
 
 #main h2,
@@ -178,26 +111,29 @@ main p {
   padding: 20px;
 }
 
-#main h2:first-child,
-#main h3:first-child {
-  border: none;
-  padding: 10;
+.grid-container,
+.mac-grid-container,
+.bacon-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px; 
 }
 
-#main h2:last-child,
-#main h3:last-child {
-  margin-bottom: 0;
-  border-bottom: none;
-}
+.grid-item,
+.mac-grid-container .grid-item,
+.bacon-grid-container .grid-item {
+  width: 100%; 
+} 
 
-#main h2.travel {
-  margin-bottom: 0;
-  border-bottom: none;
-}
-
-#main h3.travel {
-  margin-bottom: 0;
-  border-bottom: none;
+main img, video{
+  display: grid; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  height: auto;
+  border-radius: 10px;
+  border: 15px;
+  border: 7px solid pink;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -205,4 +141,8 @@ main p {
     display: none;
   }
 
+  source {
+    display: none;
+  }  
 }
+
